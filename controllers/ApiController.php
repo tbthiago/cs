@@ -166,7 +166,7 @@ class ApiController extends Controller {
     //////////////////  ESTOQUES  //////////////////
     ////////////////////////////////////////////////
     public function actionEstoques(){
-        return json_encode(Estoque::find()->joinWith('estoqueUsuarios')->where(['estoque_usuario.ativo'=>1,'estoque_usuario.id_usuari'=>$this->id_usuario])->asArray()->all());
+        return json_encode(Estoque::find()->joinWith('estoqueUsuarios')->where(['estoque_usuario.ativo'=>1,'estoque_usuario.id_usuario'=>$this->id_usuario])->asArray()->all());
     }
 
     public function actionSalvarEstoque($id = null){
