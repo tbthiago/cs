@@ -21,13 +21,7 @@ class ApiController extends Controller {
     private $id_usuario=1;
     private $id_assinante=1;
 
-    public function __construct(){
-        parent::__construct();
-        Header('Access-Control-Allow-Origin: *'); //for allow any domain, insecure
-        Header('Access-Control-Allow-Headers: *'); //for allow any headers, insecure
-        Header('Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE'); //method allowed
-    }
-
+    
     ////////////////////////////////////////////////
     /////////////////  PRODUTOS  ///////////////////
     ////////////////////////////////////////////////
